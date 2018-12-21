@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from html.univertheme.com/maxnews/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 Oct 2018 11:03:35 GMT -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" id="themify-icons-css" href="css/themify-icons.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="image/favicon.png">
+    <style>
+        .posts_index {
+  height: 180px;
+}
+
+.posts_index p {
+  position: relative;
+}
+    </style>
+    <title>OCD Portal</title>
+</head>
+
+<body>
+    <!--Load Page-->
+    <div class="load-page">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+        </div>
+    </div>
+    <div id="wrapper-container" class="site-wrapper-container">
+        <header>
+            <div class="vk-header-default">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="visible-md visible-lg vk-bottom-header uni-sticky">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="cssmenu">
+                                            <ul>
+                                                <li>
+                                                    <a href='home.html'>Home</a>
+                                                </li>
+                                                <li>
+                                                    <a href='users.html'>Users</a>
+                                                </li>
+                                                <li class="pull-right" onclick="doLogout()">
+                                                    <a>Logout</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <br>
+        <div class="container">
+            <div class="main-area">
+                <div class="row">
+                    <div class="col-md-8" style="padding:0px;">
+                        <br>
+                        <div class="row" id="cardsArena">
+                        </div>
+                        <br><br><br>
+                    </div>
+                    <div class="col-md-1" style="padding:0px;"></div>
+                    <div class="col-md-2 main-card">
+                        <br><br><br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a onclick="loadNewGameData()" class="btn btn-primary btn-block">New Game</a>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6 " style="padding:2px;">
+                                <p class="text-center"><b>SPADE </b></p>
+                                <div id="div1" ondrop="dropSpade(event)" ondragover="allowDrop(event)" style="width: 100%;height: 120px;padding: 10px;border: 1px solid #aaaaaa;"></div>
+                            </div>
+                            <div class="col-md-6 " style="padding:2px;">
+                                <p class="text-center"><b>CLUB </b></p>
+                                <div id="div2" ondrop="dropClub(event)" ondragover="allowDrop(event)" style="width: 100%;height: 120px;padding: 10px;border: 1px solid #aaaaaa;"></div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6 " style="padding:2px;">
+                                <p class="text-center"><b>DIAMOND <b></p>
+                                <div id="div3" ondrop="dropDiamond(event)" ondragover="allowDrop(event)" style="width: 100%;height: 120px;padding: 10px;border: 1px solid #aaaaaa;"></div>
+                            </div>
+                            <div class="col-md-6 " style="padding:2px;">
+                                <p class="text-center"><b>HEART </b></p>
+                                <div id="div4" ondrop="dropHeart(event)" ondragover="allowDrop(event)" style="width: 100%;height: 120px;padding: 10px;border: 1px solid #aaaaaa;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--    End the main area -->
+
+
+    </div>
+    <script src="js/jquery-2.0.2.min.js"></script>
+    <script src="js/bootstrap-notify.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/masonry.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="dist/owl.carousel.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap-hover-tabs.js"></script>
+    <script src="js/mains/socket.io.js"></script>
+    <script type="text/javascript" src="./js/mains/common.js"></script>
+    <script src="js/mains/home.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            loadGameDataFromPreviousHistory();
+        });
+    </script>
+</body>
+
+</html>

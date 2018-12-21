@@ -1,0 +1,11 @@
+{
+    "db-ocdapp": {
+        "name": "ocdapp"
+    },
+    "db-log": {
+        "name": "logs"
+    },
+    "db-analytics": {
+        "name": "analytics"
+    }
+}

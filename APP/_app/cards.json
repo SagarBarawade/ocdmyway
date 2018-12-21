@@ -1,0 +1,160 @@
+{
+    "cardsArray": [
+        {
+            "AS": "image/PNG/AS.png"
+        },
+        {
+            "AH": "image/PNG/AH.png"
+        },
+        {
+            "AD": "image/PNG/AD.png"
+        },
+        {
+            "AC": "image/PNG/AC.png"
+        },
+        {
+            "2S": "image/PNG/2S.png"
+        },
+        {
+            "2H": "image/PNG/2H.png"
+        },
+        {
+            "2D": "image/PNG/2D.png"
+        },
+        {
+            "2C": "image/PNG/2C.png"
+        },
+        {
+            "3S": "image/PNG/3S.png"
+        },
+        {
+            "3H": "image/PNG/3H.png"
+        },
+        {
+            "3D": "image/PNG/3D.png"
+        },
+        {
+            "3C": "image/PNG/3C.png"
+        },
+        {
+            "4S": "image/PNG/4S.png"
+        },
+        {
+            "4H": "image/PNG/4H.png"
+        },
+        {
+            "4D": "image/PNG/4D.png"
+        },
+        {
+            "4C": "image/PNG/4C.png"
+        },
+        {
+            "5S": "image/PNG/5S.png"
+        },
+        {
+            "5H": "image/PNG/5H.png"
+        },
+        {
+            "5D": "image/PNG/5D.png"
+        },
+        {
+            "5C": "image/PNG/5C.png"
+        },
+        {
+            "6S": "image/PNG/6S.png"
+        },
+        {
+            "6H": "image/PNG/6H.png"
+        },
+        {
+            "6D": "image/PNG/6D.png"
+        },
+        {
+            "6C": "image/PNG/6C.png"
+        },
+        {
+            "7S": "image/PNG/7S.png"
+        },
+        {
+            "7H": "image/PNG/7H.png"
+        },
+        {
+            "7D": "image/PNG/7D.png"
+        },
+        {
+            "7C": "image/PNG/7C.png"
+        },
+        {
+            "8S": "image/PNG/8S.png"
+        },
+        {
+            "8H": "image/PNG/8H.png"
+        },
+        {
+            "8D": "image/PNG/8D.png"
+        },
+        {
+            "8C": "image/PNG/8C.png"
+        },
+        {
+            "9S": "image/PNG/9S.png"
+        },
+        {
+            "9H": "image/PNG/9H.png"
+        },
+        {
+            "9D": "image/PNG/9D.png"
+        },
+        {
+            "9C": "image/PNG/9C.png"
+        },
+        {
+            "10S": "image/PNG/10S.png"
+        },
+        {
+            "10H": "image/PNG/10H.png"
+        },
+        {
+            "10D": "image/PNG/10D.png"
+        },
+        {
+            "10C": "image/PNG/10C.png"
+        },
+        {
+            "JS": "image/PNG/JS.png"
+        },
+        {
+            "JH": "image/PNG/JH.png"
+        },
+        {
+            "JD": "image/PNG/JD.png"
+        },
+        {
+            "JC": "image/PNG/JC.png"
+        },
+        {
+            "QS": "image/PNG/QS.png"
+        },
+        {
+            "QH": "image/PNG/QH.png"
+        },
+        {
+            "QD": "image/PNG/QD.png"
+        },
+        {
+            "QC": "image/PNG/QC.png"
+        },
+        {
+            "KS": "image/PNG/KS.png"
+        },
+        {
+            "KH": "image/PNG/KH.png"
+        },
+        {
+            "KD": "image/PNG/KD.png"
+        },
+        {
+            "KC": "image/PNG/KC.png"
+        }
+    ]
+}

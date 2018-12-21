@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from html.univertheme.com/maxnews/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 Oct 2018 11:03:35 GMT -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" id="themify-icons-css" href="css/themify-icons.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="shortcut icon" href="image/favicon.png">
+    <style>
+        .posts_index {
+  height: 180px;
+}
+
+.posts_index p {
+  position: relative;
+}
+
+.imagePreview {
+   width: 100%;
+    height: 180px;
+    background-position: center center;
+  background:url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
+  background-color:#fff;
+    background-size: cover;
+  background-repeat:no-repeat;
+    display: inline-block;
+  box-shadow:0px -3px 6px 2px rgba(0,0,0,0.2);
+}
+.btn-primary
+{
+  display:block;
+  border-radius:0px;
+  box-shadow:0px 4px 6px 2px rgba(0,0,0,0.2);
+  margin-top:-5px;
+}
+.imgUp
+{
+  margin-bottom:15px;
+}
+hr{
+      border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+.del
+{
+  position:absolute;
+  top:0px;
+  right:15px;
+  width:30px;
+  height:30px;
+  text-align:center;
+  line-height:30px;
+  background-color:rgba(255,255,255,0.6);
+  cursor:pointer;
+}
+.imgAdd
+{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  background-color:#4bd7ef;
+  color:#fff;
+  box-shadow:0px 0px 2px 1px rgba(0,0,0,0.2);
+  text-align:center;
+  line-height:30px;
+  margin-top:0px;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.well
+{
+    height: 500px;
+    width: 300px;
+
+}
+    </style>
+    <title>OCD Portal</title>
+</head>
+
+<body>
+    <!--Load Page-->
+    <div class="load-page">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+        </div>
+    </div>
+    <div id="wrapper-container" class="site-wrapper-container">
+        <header>
+            <div class="vk-header-default">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="visible-md visible-lg vk-bottom-header        uni-sticky">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="cssmenu">
+                                            <ul>
+                                                <li>
+                                                    <a href='home.html'>Home</a>
+                                                </li>
+                                                <li>
+                                                    <a href='users.html'>Users</a>
+                                                </li>
+                                                <li class="pull-right" onclick="doLogout()">
+                                                    <a>Logout</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h4 class="text-center">Edit Profile</h4>
+                <hr>
+                <br>
+                <div class="row">
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" value="xyz" id="inputName" readonly="true" ondblclick="this.readOnly='';">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary btn-round" id="name" onclick="editUserData($(this).attr('id'));">
+                            <span class="fa fa-check"></span>
+                            ok</button>
+                    </div>
+                </div> <br>
+                <div class="row">
+                    <div class="col-md-8">
+                        <input type="email" id="inputEmail" placeholder="Email ID" readonly="true" class="form-control"
+                            ondblclick="this.readOnly='';">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary btn-round" id="email" onclick="editUserData($(this).attr('id'));">
+                            <span class="fa fa-check"></span> ok</button>
+                    </div>
+                </div> <br>
+                <div class="row">
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" placeholder="Mobile No" id="inputMobileNo" value="7387936382"
+                            readonly="true" ondblclick="this.readOnly='';">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary btn-round" id="mobile" onclick="editUserData($(this).attr('id'));">
+                            <span class="fa fa-check"></span> ok</button>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="inputSkills" placeholder="Skills (Separate by ',')"
+                            value="" readonly="true" ondblclick="this.readOnly='';">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary btn-round" id="skills" onclick="editUserData($(this).attr('id'));">
+                            <span class="fa fa-check"></span> ok</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <h4 class="text-center">Upload Picture</h4>
+                <hr>
+                <div class="imgUp text-center">
+
+                    <div class="imagePreview form-control" id="img1" data-imageId="0" style="margin-top: 20px;"></div>
+                    <br><br>
+                    <div class="row text-center">
+                        <div class="col-sm-6" style="padding-right:1px;">
+                            <form id="form1" role="form" enctype="multipart/form-data">
+                                <label class="btn btn-sm btn-primary btn-block">
+                                    Browse<input type="file" id="image1" class="uploadFile img" value="Upload Photo"
+                                        style="width: 0px;height: 0px;overflow: hidden;">
+                                </label>
+                            </form>
+                        </div>
+                        <div class="col-sm-6" style="padding-left:1px;">
+                            <label class="btn btn-sm  btn-primary">
+                                <a onclick="uploadImage($(this).attr('id'))" id='1' style="color:white;">Upload</a>
+                            </label>
+                        </div>
+                        <div class="col-sm-12">
+                            <button type="submit" onclick="setDefaultImage($('#img1').attr('data-imageId'))" class="btn btn-sm btn-primary btn-block">Set
+                                as Default</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="imgUp text-center">
+                    <div class="imagePreview form-control" id="img2" data-imageId="0" style="margin-top: 20px;"></div>
+                    <br><br>
+                    <div class="row">
+                        <div class="col-sm-6" style="padding-right:1px;">
+                            <form id="form2" role="form" enctype="multipart/form-data">
+                                <label class="btn btn-sm btn-primary btn-block">
+                                    Browse<input type="file" id="image2" class="uploadFile img" value="Upload Photo"
+                                        style="width: 0px;height: 0px;overflow: hidden;">
+                                </label>
+                            </form>
+                        </div>
+                        <div class="col-sm-6" style="padding-left:1px;">
+                            <label class="btn btn-sm  btn-primary btn-block">
+                                <a onclick="uploadImage($(this).attr('id'))" id='2' style="color:white;">Upload</a>
+                            </label>
+                        </div>
+                        <div class="col-sm-12">
+                            <button type="submit" onclick="setDefaultImage($('#img2').attr('data-imageId'))" class="btn btn-sm btn-primary btn-block">Set
+                                as Default</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <h4 class="text-center">Profile Information</h4>
+                <hr>
+                <br>
+                <div class="row">
+                    <img id="displayProfileImage" src="image/sport-red.png" width="100%" class="img-responsive" alt="profile picture"
+                        style="height: 190px;">
+                </div>
+                <div class="row">
+                    <br>
+                    <div class="col-md-3 col-xs-6">
+                        <h4>Name</h4>
+                    </div>
+
+                    <div class="col-md-9 col-xs-6">
+                        <p id="displayName">Xyz</p>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <br>
+                    <div class="col-md-3 col-xs-6">
+                        <h4>Email</h4>
+                    </div>
+
+                    <div class="col-md-9 col-xs-6">
+                        <p id="displayEmail">xyz@gmail.com</p>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <br>
+                    <div class="col-md-3 col-xs-6">
+                        <h4>Mobile</h4>
+                    </div>
+
+                    <div class="col-md-9 col-xs-6">
+                        <p id="displayMobile">+91 7387936382</p>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <br>
+                    <div class="col-md-3 col-xs-6">
+                        <h4>Skills</h4>
+                    </div>
+
+                    <div class="col-md-9 col-xs-6">
+                        <p id="displaySkills"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-2.0.2.min.js"></script>
+    <script src="js/bootstrap-notify.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/masonry.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="dist/owl.carousel.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="./js/mains/common.js"></script>
+    <script src="js/mains/index.js"></script>
+    <script src="js/mains/user.js"></script>
+    <script src="js/bootstrap-hover-tabs.js"></script>
+
+    <script type="text/javascript">
+        function userAction() {
+            document.getElementById("user").readOnly = true;
+        }
+        function mobileAction() {
+            document.getElementById("mob_no").readOnly = true;
+        }
+        function emailAction() {
+            document.getElementById("email").readOnly = true;
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(".imgAdd").click(function () {
+            $(this).closest(".row").find('.imgAdd').before('<div class="col-sm-2 imgUp"><div class="imagePreview"></div><label class="btn btn-primary">Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width:0px;height:0px;overflow:hidden;"></label><i class="fa fa-times del"></i></div>');
+        });
+        $(document).on("click", "i.del", function () {
+            $(this).parent().remove();
+        });
+        $(function () {
+            $(document).on("change", ".uploadFile", function () {
+                var uploadFile = $(this);
+                var files = !!this.files ? this.files : [];
+                if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+
+                if (/^image/.test(files[0].type)) { // only image file
+                    var reader = new FileReader(); // instance of the FileReader
+                    reader.readAsDataURL(files[0]); // read the local file
+
+                    reader.onloadend = function () { // set image data as background of div
+                        //alert(uploadFile.closest(".upimage").find('.imagePreview').length);
+                        uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url(" + this.result + ")");
+                    }
+                }
+
+            });
+        });
+    </script>
+</body>
+
+</html>
