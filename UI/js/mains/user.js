@@ -1,6 +1,12 @@
 'use strict'
 
 $(document).ready(function () {
+
+    if (!window.localStorage.authToken) {
+        window.location = 'index.html';
+        showErrorNotificationMessage('You need to login first!');
+    }
+
     getUserData();
 
 });

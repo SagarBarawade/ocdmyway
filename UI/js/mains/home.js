@@ -1,6 +1,12 @@
 var websocket;
 
 $(document).ready(function () {
+
+    if (!window.localStorage.authToken) {
+        window.location = 'index.html';
+        showErrorNotificationMessage('You need to login first!');
+    }
+
     var socketUrl = window.localStorage.socketUrl;
     websocket = io(socketUrl);
     websocket.emit('PINGB', 'HI SERVER');
